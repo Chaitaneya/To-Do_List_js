@@ -1,0 +1,133 @@
+body {
+    background: #F1F0E9;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 23px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    background: #8bc299;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#to-do-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 20px;
+    color: #002018;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+#to-do-input:focus {
+    outline: none;
+}
+
+#add-task {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0D4715;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#add-task:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+ul#todolist {
+    list-style: none;
+    padding: 0;
+}
+
+ul#todolist li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #4C7B8B;
+    color: #fff;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s;
+}
+
+ul#todolist li:hover {
+    background-color: #B3D8A8;
+}
+
+ul#todolist li button {
+    background-color: 443627;
+    color: 443627;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+ul#todolist li button:hover {
+    background-color: A3D1C6;
+    transform: scale(1.1);
+}
+
+#todolist li .task-text.completed {
+    text-decoration: line-through;
+    color: #666;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+ul#todolist li {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.filtered {
+    display: none !important;
+}
+
+.btn:hover {
+    background: #423a6f;
+    color: #fff;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-radius: 13px 13px;
+    transition: 0.8s;
+}
